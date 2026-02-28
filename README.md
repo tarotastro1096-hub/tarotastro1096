@@ -1,28 +1,53 @@
-# Project Overview
-This project is a state-of-the-art tool crafted for tarot enthusiasts and astro-analysts, integrating tarot reading and astrological insights to help users make informed decisions based on the stars and cards.
-
-# Features
-- **Tarot Card Selection**: Randomly selects tarot cards for readings.
-- **Astrological Insights**: Provides astrological analysis for better understanding.
-- **User-Friendly Interface**: Modern and intuitive UI for ease of navigation.
-- **Customizable Settings**: Users can adjust preferences for readings.
-
-# Installation
-1. **Clone the repository**: Use the command `git clone https://github.com/tarotastro1096-hub/tarotastro1096.git`
-2. **Navigate to the project directory**: `cd tarotastro1096`
-3. **Install dependencies**: Run `npm install` or `pip install -r requirements.txt` depending on the language specifications.
-
-# Usage 
-To get started with the application, execute the main script in the terminal. For example:
-- **JavaScript:** `node index.js`
-- **Python:** `python main.py`
-
-Follow the on-screen instructions to perform readings and receive insights based on your tarot selections and astrological data.
-
-# Technical Details
-- **Languages Used**: JavaScript, Python
-- **Frameworks**: Node.js, Flask
-- **APIs**: Utilizes external tarot card and astrology APIs for data.
-- **Databases**: Stores user settings and history in SQLite.
-
-Feel free to contribute to the project by submitting a pull request or reporting issues.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glitchy Hacker UI</title>
+    <style>
+        body {
+            background-color: black;
+            color: #00ff00;
+            font-family: monospace;
+            overflow: hidden;
+        }
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            animation: glitch 1s infinite;
+        }
+        @keyframes glitch {
+            0% { text-shadow: 2px 0 red, -2px 0 blue; }
+            20% { text-shadow: -2px 0 red, 2px 0 blue; }
+            40% { text-shadow: 2px 0 red, -2px 0 blue; }
+            60% { text-shadow: -2px 0 red, 2px 0 blue; }
+            100% { text-shadow: none; }
+        }
+        pre {
+            font-size: 20px;
+            animation: flicker 2s infinite;
+        }
+        @keyframes flicker {
+            0%, 20%, 40%, 60%, 100% { opacity: 1; }
+            10%, 30%, 50%, 70%, 90% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <h1>WELCOME TO THE HACKER ZONE</h1>
+    <pre>
+░░▀▄░░░░░░▄▀░░░░░░░░░░░░░░░░░▄░░░░░░░░░░▄▄▀▀▄▄░░░░░░
+░░░░█░░▄░░█░░▀▀▀░░░░░░░▄▄░░░░█░░░░░░░▄▀░░░░█░░░░░░
+░░░░░░█░░█░░░░░░▄▄█░░░░▄██░░░░▒██████░░░░▀▄░░░░░░░░
+░░░░░░█▄░░░█░░▀▄█▒██░░▄███░░░░░░█░░███▄░░░░█░░░░░░░
+░░░░░░░░▀▄▄█▄▄▄▄▀▄░░▄▀▀░░█░░░░░░░░░░█░░░▀█▄▄▄░░░░░░
+    </pre>
+    <script>
+        let interval = 100;
+        let glitchText = document.getElementsByTagName('pre')[0];
+        setInterval(() => {
+            glitchText.innerHTML = glitchText.innerHTML.split('').map(c => Math.random() > 0.8 ? '░' : c).join('');
+        }, interval);
+    </script>
+</body>
+</html>
