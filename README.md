@@ -1,53 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glitchy Hacker UI</title>
-    <style>
-        body {
-            background-color: black;
-            color: #00ff00;
-            font-family: monospace;
-            overflow: hidden;
-        }
-        h1 {
-            text-align: center;
-            font-size: 50px;
-            animation: glitch 1s infinite;
-        }
-        @keyframes glitch {
-            0% { text-shadow: 2px 0 red, -2px 0 blue; }
-            20% { text-shadow: -2px 0 red, 2px 0 blue; }
-            40% { text-shadow: 2px 0 red, -2px 0 blue; }
-            60% { text-shadow: -2px 0 red, 2px 0 blue; }
-            100% { text-shadow: none; }
-        }
-        pre {
-            font-size: 20px;
-            animation: flicker 2s infinite;
-        }
-        @keyframes flicker {
-            0%, 20%, 40%, 60%, 100% { opacity: 1; }
-            10%, 30%, 50%, 70%, 90% { opacity: 0; }
-        }
-    </style>
-</head>
-<body>
-    <h1>WELCOME TO THE HACKER ZONE</h1>
-    <pre>
-░░▀▄░░░░░░▄▀░░░░░░░░░░░░░░░░░▄░░░░░░░░░░▄▄▀▀▄▄░░░░░░
-░░░░█░░▄░░█░░▀▀▀░░░░░░░▄▄░░░░█░░░░░░░▄▀░░░░█░░░░░░
-░░░░░░█░░█░░░░░░▄▄█░░░░▄██░░░░▒██████░░░░▀▄░░░░░░░░
-░░░░░░█▄░░░█░░▀▄█▒██░░▄███░░░░░░█░░███▄░░░░█░░░░░░░
-░░░░░░░░▀▄▄█▄▄▄▄▀▄░░▄▀▀░░█░░░░░░░░░░█░░░▀█▄▄▄░░░░░░
-    </pre>
-    <script>
-        let interval = 100;
-        let glitchText = document.getElementsByTagName('pre')[0];
-        setInterval(() => {
-            glitchText.innerHTML = glitchText.innerHTML.split('').map(c => Math.random() > 0.8 ? '░' : c).join('');
-        }, interval);
-    </script>
-</body>
-</html>
+# 3D Animated Red Neon Theme
+
+Welcome to the **Red Team Authorized White Devil Coder Hacking Tools** repository!
+
+## Features
+- **Dynamic 3D Animation**: Experience a captivating 3D animated interface that brings your hacking tools to life.
+- **Red Neon Aesthetics**: Dive into the world of red neon lights, creating an immersive environment.
+- **Creepy Glitch Effects**: Our animations feature glitchy and unsettling visuals that enhance the hacking experience.
+
+## Tools Included
+- Tool 1: Overview of tool characteristics.
+- Tool 2: Overview of tool characteristics.
+
+## How to Use
+1. Install the required dependencies.
+2. Configure your settings.
+3. Enjoy the chilling experience with our tools.
+
+## Warning
+Use at your own risk. Engaging in unauthorized access or hacking activities is illegal and may carry severe consequences.
